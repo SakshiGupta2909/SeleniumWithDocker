@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build Image') {
             steps {
-                sh "docker build -t='vinsdocker/selenium-docker' ."
+                sh "docker build -t='kishtityagi/selenium-docker' ."
             }
         }
         stage('Push Image') {
