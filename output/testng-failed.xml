@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [search-module]">
+  <test thread-count="5" name="book-flight-1(failed)">
+    <parameter name="keyword" value="java"/>
+    <classes>
+      <class name="com.searchmodule.tests.SearchTest">
+        <methods>
+          <include name="search"/>
+          <include name="setupDriver"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.searchmodule.tests.SearchTest -->
+    </classes>
+  </test> <!-- book-flight-1(failed) -->
+</suite> <!-- Failed suite [search-module] -->

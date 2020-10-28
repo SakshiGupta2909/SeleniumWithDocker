@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="search-module" duration-ms="7216" started-at="2020-10-26T12:29:48Z" finished-at="2020-10-26T12:29:55Z">
+    <groups>
+    </groups>
+    <test name="book-flight-1" duration-ms="7216" started-at="2020-10-26T12:29:48Z" finished-at="2020-10-26T12:29:55Z">
+      <class name="com.searchmodule.tests.SearchTest">
+        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.searchmodule.tests.SearchTest@19dfb72a]" name="setupDriver" is-config="true" duration-ms="3029" started-at="2020-10-26T12:29:48Z" finished-at="2020-10-26T12:29:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="search(java.lang.String)[pri:0, instance:com.searchmodule.tests.SearchTest@19dfb72a]" name="search" duration-ms="4069" started-at="2020-10-26T12:29:51Z" finished-at="2020-10-26T12:29:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[java]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.searchmodule.tests.SearchTest@19dfb72a]" name="quitDriver" is-config="true" duration-ms="72" started-at="2020-10-26T12:29:55Z" finished-at="2020-10-26T12:29:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.searchmodule.tests.SearchTest -->
+    </test> <!-- book-flight-1 -->
+  </suite> <!-- search-module -->
+</testng-results>
