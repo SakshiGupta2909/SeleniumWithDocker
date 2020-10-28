@@ -14,10 +14,11 @@ pipeline {
         }
         stage('Push Image') {
             steps {
-			    withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'Password', usernameVariable: 'Username')]) {
-                    
-			        sh "docker login --username=${Username} --password=${Password}"
-			        sh "docker push kishtityagi/selenium-docker:latest"
+			   script {
+			        docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
+			        app.push("${BUILD_NUMBER}")
+			        app.push("latest")
+			        }
 			    }                           
             }
         }
